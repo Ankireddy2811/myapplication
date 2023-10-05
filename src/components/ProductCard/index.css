@@ -1,0 +1,218 @@
+.link-item {
+  text-decoration: none;
+  margin-bottom: 48px;
+  width: 350px;
+  min-height: 200px;
+  flex-grow: 0;
+
+  flex-shrink: 1;
+
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* To evenly distribute space between content and star container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+  border-radius: 8px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .link-item {
+    width: 300px;
+  }
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 250px;
+  border-radius: 6px;
+}
+
+.title {
+  color: #171f46;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  padding-left: 10px;
+}
+
+.brand {
+  color: #594d6d;
+  font-family: 'Roboto';
+  font-size: 18px;
+  margin-bottom: 6px;
+  padding-left: 10px;
+}
+
+.product-details {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-top: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.price {
+  color: #171f46;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.title-link {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  background-color: #3b82f6;
+  border-radius: 6px;
+  padding: 6px 16px;
+}
+.description {
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 700;
+  padding-left: 10px;
+  color: brown;
+}
+.rating {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 4px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.star {
+  height: 20px;
+  width: 20px;
+  margin-bottom: 3px;
+}
+.edit-button {
+  width: 100px;
+  height: 30px;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
+  outline: none;
+  margin-top: 10px;
+}
+.edit-delete {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.user-name {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.user-email {
+  font-size: 16px;
+  color: #777;
+}
+
+.trigger-button {
+  width: 100px;
+  height: 30px;
+  background-color: #7c69e9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
+  outline: none;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Roboto';
+  margin: 10px;
+}
+.save-button {
+  width: 100px;
+  height: 30px;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
+  outline: none;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Roboto';
+}
+.save-button.saved {
+  background-color: #ff9800;
+}
+.input-ele {
+  width: 70%;
+  height: 30px;
+  margin-top: 5px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+.form-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.delete-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  margin-top: 15px;
+  padding-right: 10px;
+}
+
+.delete-icon {
+  font-size: 25px;
+  color: #e53935;
+}
+
+.edit-delete {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .each-item {
+    width: 80%;
+  }
+  .input-ele {
+    width: 90%;
+  }
+}
+.view-button {
+  background-color: darkblue;
+  width: 50px;
+}

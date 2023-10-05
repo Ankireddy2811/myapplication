@@ -1,0 +1,35 @@
+.product-sections {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  max-width: 1110px;
+}
+
+@media (max-width: 768px) {
+  .product-sections {
+    margin-left: 20px;
+  }
+}
+.create-button {
+  visibility: visible;
+  animation-delay: 0.8s;
+  animation-name: fadeIn;
+  background: linear-gradient(135deg, #3f74a3, #0000aa 32%, #4d4dff);
+  box-shadow: 0 10px 15px 0px rgba(175, 0, 87, 0.2);
+  height: 30px;
+  width: 120px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  margin-left: 90px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.edit-button.saved {
+  background-color: #ff9800;
+}
