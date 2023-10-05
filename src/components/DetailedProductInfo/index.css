@@ -287,3 +287,11 @@
   margin: 10px;
   border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+  .similar-image {
+    height: 20vh;
+    width: 45%;
+    margin: 5px;
+  }
+}

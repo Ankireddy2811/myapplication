@@ -190,3 +190,9 @@
   align-items: center;
   justify-content: flex-end;
 }
+
+@media (max-width: 768px) {
+  .create-button-container {
+    padding-right: 30px;
+  }
+}

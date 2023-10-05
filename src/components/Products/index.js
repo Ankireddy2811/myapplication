@@ -155,6 +155,7 @@ class Products extends Component {
 
   addProduct = async event => {
     event.preventDefault()
+    this.setState(prevState => ({isSaveClicked: !prevState.isSaveClicked}))
     const {addDataForm} = this.state
     const options = {
       method: 'POST',
@@ -166,7 +167,6 @@ class Products extends Component {
     console.log(data)
     this.setState(prevState => ({
       productsList: [...prevState.productsList, data],
-      isSaveClicked: !prevState.isSaveClicked,
     }))
   }
 
@@ -307,7 +307,7 @@ class Products extends Component {
             }
           >
             {close => (
-              <form className="form-container" onSubmit={this.addProduct}>
+              <form className="form-container2" onSubmit={this.addProduct}>
                 <input
                   className="input-ele"
                   onChange={this.addImageUrl}
@@ -343,7 +343,6 @@ class Products extends Component {
                     className="trigger-button"
                     onClick={() => {
                       close()
-                      this.onCloseButton()
                       this.onCloseButton()
                     }}
                   >
