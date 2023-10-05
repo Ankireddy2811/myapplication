@@ -59,10 +59,22 @@ const FiltersGroup = props => {
     )
   }
 
+  const onclearButton = () => {
+    const {removeFilters} = props
+    removeFilters()
+  }
+
   return (
     <div className="filters-group-container">
       {renderSearchInput()}
       {renderProductCategories()}
+      <button
+        type="button"
+        className="clear-filters-btn"
+        onClick={onclearButton}
+      >
+        CLEAR FILTERS
+      </button>
     </div>
   )
 }

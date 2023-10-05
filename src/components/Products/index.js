@@ -170,6 +170,10 @@ class Products extends Component {
     }))
   }
 
+  removeFilters = () => {
+    this.setState({activeCategoryId: '', searchInput: ''}, this.getProducts)
+  }
+
   addImageUrl = event => {
     this.setState(prevState => ({
       addDataForm: {...prevState.addDataForm, imageurl: event.target.value},
@@ -362,6 +366,7 @@ class Products extends Component {
             enterSearchInput={this.enterSearchInput}
             activeCategoryId={activeCategoryId}
             changeCategory={this.changeCategory}
+            removeFilters={this.removeFilters}
           />
 
           {this.renderAllProducts()}
